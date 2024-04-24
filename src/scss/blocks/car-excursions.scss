@@ -1,0 +1,88 @@
+.car-excursions {
+	&__top {
+		text-align: center;
+	}
+	&__subtitle {
+		line-height: 150%;
+		color: var(--text-gray-dark);
+		margin-top: 10px;
+	}
+	&__row {
+		margin-top: 40px;
+	}
+	&__coll {
+		display: block;
+		text-align: center;
+	}
+	&__img {
+		width: 100%;
+		height: 272px;
+		border-radius: 10px;
+		overflow: hidden;
+		margin-bottom: 15px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			transition: transform 0.3s;
+		}
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+	&__caption {
+		transition: color 0.3s;
+	}
+	.swiper-wrapper {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 20px;
+	}
+}
+@media (max-width: 1470px) {
+}
+@media (max-width: 1279px) {
+	.car-excursions {
+		&__body {
+			overflow: auto;
+		}
+		&__coll {
+			min-width: 272px;
+		}
+	}
+}
+@media (max-width: 1099px) {
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+	.car-excursions {
+		&__top {
+			text-align: left;
+			display: flex;
+			flex-direction: column-reverse;
+			gap: 10px;
+		}
+		&__subtitle {
+			margin-top: 0px;
+		}
+		&__body {
+			overflow: visible;
+		}
+		&__row {
+			margin-top: 30px;
+		}
+		&__coll {
+			min-width: auto;
+			display: block;
+			text-align: left;
+		}
+		.swiper-wrapper {
+			display: flex;
+			gap: 0px;
+		}
+	}
+}
