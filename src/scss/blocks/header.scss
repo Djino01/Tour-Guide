@@ -1,5 +1,5 @@
 .header {
-	position: fixed;
+	position: absolute;
 	top: 20px;
 	left: 0;
 	width: 100%;
@@ -139,20 +139,25 @@
 			height: 50px;
 		}
 	}
-	&.fixed {
-		top: 0px;
+	&--child {
 		.header {
 			&-top {
-				&::before {
-					transform: translateX(-50vw) scale(1);
-					transition: all 0.3s;
-				}
+				border-radius: 10px 10px 0px 0px;
 			}
 			&-bottom {
-				transform: translateY(-100%);
-				opacity: 0;
-				visibility: hidden;
-				transition: all 0.3s;
+				background: #fff;
+				padding-bottom: 22px;
+				border-radius: 0px 0px 10px 10px;
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					width: calc(100% - 40px);
+					height: 1px;
+					left: 20px;
+					top: 0px;
+					background-color: var(--fill-gray-stroke-light);
+				}
 			}
 		}
 	}
@@ -266,13 +271,19 @@
 		&__buttons {
 			display: flex;
 		}
-		&.fixed {
+		&--child {
 			.header {
+				&-top {
+					border-radius: 10px;
+				}
 				&-bottom {
-					transform: translateY(0%);
-					opacity: 1;
-					visibility: visible;
-					transition: all 0.3s;
+					background-color: var(--fill-gray-light);
+					padding-bottom: 20px;
+					border-radius: 0px;
+					position: fixed;
+					&::before {
+						display: none;
+					}
 				}
 			}
 		}

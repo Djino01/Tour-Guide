@@ -1,0 +1,130 @@
+.rating {
+	&.error {
+		color: #eb25c9;
+		animation-name: field-error;
+		animation-duration: 1s;
+		animation-fill-mode: both;
+	}
+	&__stars {
+		width: 106px;
+		height: 18px;
+		input[type="radio"] {
+			display: none;
+		}
+		input[type="radio"]:checked {
+			& ~ .rating__value {
+				background: url(../img/icons/rating/star-active.svg) no-repeat center center;
+				background-size: 100% 100%;
+			}
+		}
+	}
+	&__value {
+		float: right;
+		display: block;
+		width: calc(100% / 5);
+		height: 18px;
+		background: url(../img/icons/rating/star.svg) no-repeat center center;
+		background-size: 100% 100%;
+		cursor: pointer;
+		&:not(.rating__value_disabled) {
+			&:hover {
+				background: url(../img/icons/rating/star-active.svg) no-repeat center center;
+				background-size: 100% 100%;
+				& ~ .rating__value {
+					background: url(../img/icons/rating/star-active.svg) no-repeat center center;
+					background-size: 100% 100%;
+				}
+			}
+		}
+		&_disabled {
+			cursor: default;
+		}
+	}
+}
+
+@-webkit-keyframes field-error {
+	10%,
+	90% {
+		-webkit-transform: translate3d(-1px, 0, 0);
+		transform: translate3d(-1px, 0, 0);
+	}
+	20%,
+	80% {
+		-webkit-transform: translate3d(2px, 0, 0);
+		transform: translate3d(2px, 0, 0);
+	}
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translate3d(-4px, 0, 0);
+		transform: translate3d(-4px, 0, 0);
+	}
+	40%,
+	60% {
+		-webkit-transform: translate3d(4px, 0, 0);
+		transform: translate3d(4px, 0, 0);
+	}
+}
+@keyframes field-error {
+	10%,
+	90% {
+		-webkit-transform: translate3d(-1px, 0, 0);
+		transform: translate3d(-1px, 0, 0);
+	}
+	20%,
+	80% {
+		-webkit-transform: translate3d(2px, 0, 0);
+		transform: translate3d(2px, 0, 0);
+	}
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translate3d(-4px, 0, 0);
+		transform: translate3d(-4px, 0, 0);
+	}
+	40%,
+	60% {
+		-webkit-transform: translate3d(4px, 0, 0);
+		transform: translate3d(4px, 0, 0);
+	}
+}
+@media (max-width: 1590px) {
+}
+@media (max-width: 1420px) {
+	.rating {
+		&_big {
+			.rating {
+				&__stars {
+					width: 180px;
+					height: 32px;
+				}
+				&__value {
+					height: 32px;
+					background-size: 100% 100%;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1279px) {
+}
+@media (max-width: 959px) {
+}
+@media (max-width: 760px) {
+}
+@media (max-width: 570px) {
+	.rating {
+		&_big {
+			.rating {
+				&__stars {
+					width: 150px;
+					height: 26px;
+				}
+				&__value {
+					height: 26px;
+					background-size: 100% 100%;
+				}
+			}
+		}
+	}
+}

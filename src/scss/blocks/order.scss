@@ -53,6 +53,24 @@
 			font-size: 16px;
 			line-height: 150%;
 			padding: 18px;
+			color: var(--text-black);
+			border-color: var(--fill-gray-stroke-dark);
+			background: var(--fill-gray-light);
+			&::-webkit-input-placeholder {
+				color: var(--text-gray-dark);
+			}
+			&::-moz-placeholder {
+				color: var(--text-gray-dark);
+			}
+			&:-moz-placeholder {
+				color: var(--text-gray-dark);
+			}
+			&:-ms-input-placeholder {
+				color: var(--text-gray-dark);
+			}
+			&:focus {
+				color: var(--text-black);
+			}
 		}
 	}
 }

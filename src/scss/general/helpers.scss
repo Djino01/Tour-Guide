@@ -12,6 +12,18 @@
 	margin-top: 120px;
 	margin-bottom: 120px;
 }
+.section-small {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.cover {
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
 
 .logo {
 	width: 220px;
@@ -114,26 +126,26 @@
 	font-size: 14px;
 	line-height: 100%;
 	color: var(--text-black);
-	border: 1px solid var(--fill-gray-stroke-dark);
+	border: 1px solid var(--fill-gray-stroke-light);
 	border-radius: 6px;
-	padding: 18px 15px;
-	background: var(--fill-gray-light);
+	padding: 16px 14px;
+	background: var(--fill-white);
 	position: relative;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	transition: all 0.3s ease;
 	resize: none;
 	&::-webkit-input-placeholder {
-		color: var(--text-gray-dark);
+		color: var(--text-gray-light);
 	}
 	&::-moz-placeholder {
-		color: var(--text-gray-dark);
+		color: var(--text-gray-light);
 	}
 	&:-moz-placeholder {
-		color: var(--text-gray-dark);
+		color: var(--text-gray-light);
 	}
 	&:-ms-input-placeholder {
-		color: var(--text-gray-dark);
+		color: var(--text-gray-light);
 	}
 	&:focus {
 		color: var(--text-black);
@@ -175,6 +187,9 @@
 	}
 	&__desc {
 		color: var(--text-black);
+		a {
+			color: var(--fill-blue);
+		}
 	}
 	&:hover {
 		.checbox {
@@ -221,6 +236,13 @@
 		font-size: 14px;
 		line-height: 150%;
 		color: var(--text-black);
+		a {
+			color: var(--fill-blue);
+			transition: color 0.3s;
+			&:hover {
+				color: var(--text-black);
+			}
+		}
 	}
 	input[type="checkbox"]:checked + .checkbox__icon svg,
 	input[type="radio"]:checked + .checkbox__icon svg {
@@ -240,6 +262,20 @@
 		line-height: 130%;
 		text-align: center;
 		color: var(--fill-white);
+	}
+	&_item {
+		font-size: 36px;
+	}
+	&_min {
+		font-size: 26px;
+	}
+	&_small {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 150%;
+	}
+	&_litle {
+		font-size: 20px;
 	}
 }
 
@@ -266,6 +302,26 @@
 	border: 1px solid var(--fill-gray-stroke-light);
 	border-radius: 6px;
 	padding: 11px 23px;
+	background-color: var(--fill-white);
+	cursor: pointer;
+	transition: all 0.3s;
+	&.active,
+	&:hover {
+		border-color: var(--fill-blue);
+		background-color: var(--fill-blue);
+		color: var(--fill-white);
+	}
+}
+
+.tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 100%;
+	color: var(--fill-blue);
+	border: 1px solid var(--fill-gray-stroke-light);
+	border-radius: 20px;
+	padding: 9px 11.5px;
 	background-color: var(--fill-white);
 	cursor: pointer;
 	transition: all 0.3s;
@@ -392,6 +448,46 @@
 	}
 }
 
+.breadcrumbs {
+	margin-bottom: 30px;
+	ul {
+		display: flex;
+		align-items: center;
+		li {
+			display: inline-flex;
+			align-items: center;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 100%;
+			color: var(--text-gray-light);
+			&::after {
+				content: "";
+				position: relative;
+				width: 4px;
+				height: 4px;
+				background-color: #999999;
+				border-radius: 50%;
+				margin: 0px 8px;
+			}
+			&:last-child {
+				&::after {
+					display: none;
+				}
+			}
+			a {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 100%;
+				color: var(--text-gray-light);
+				transition: background 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+				&:hover {
+					background: rgba(35, 108, 174, 0);
+				}
+			}
+		}
+	}
+}
+
 .arrow {
 	display: flex;
 	align-items: center;
@@ -474,12 +570,32 @@
 	.wrapper {
 		padding: 0px 10px;
 	}
-	.section {
+	.section,
+	.section-small {
 		margin-top: 60px;
 		margin-bottom: 60px;
 	}
 	.btn {
 		font-size: 16px;
+	}
+	.breadcrumbs {
+		margin-bottom: 30px;
+		ul {
+			li {
+				font-size: 12px;
+				&::after {
+					margin: 0px 8px;
+				}
+				&:last-child {
+					&::after {
+						display: none;
+					}
+				}
+				a {
+					font-size: 12px;
+				}
+			}
+		}
 	}
 	.title {
 		font-size: 22px;
@@ -487,11 +603,22 @@
 		&_big {
 			font-size: 22px;
 		}
+		&_item {
+			font-size: 24px;
+		}
+		&_small,
+		&_min,
+		&_litle {
+			font-size: 20px;
+		}
 	}
 	.tab {
 		padding: 9px 11px;
 		font-size: 13px;
 		line-height: 100%;
+	}
+	.tag {
+		font-size: 16px;
 	}
 	.arrow {
 		width: 40px;

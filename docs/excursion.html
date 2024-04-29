@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Пешеходная экскурсия по историческому центру Красноярска</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:image" content="">
+	<meta property="og:image:width" content="250">
+	<meta property="og:image:height" content="250">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<main class="main">
+
+<header class="header header--child ">
+	<div class="wrapper">
+		<div class="header-top">
+			<div class="header__first">
+				<a href="#" class="logo">
+					<img src="img/icons/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="header__logo">
+				<div class="header__logo-caption">Экскурсии и туры</div>
+				<div class="header__logo-desc">Яркие впечатления по интересным маршрутам </div>
+			</div>
+			<div class="header__last">
+				<button class="header__btn btn btn_blue">Контакты</button>
+				<div class="header__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="header-bottom__wrap">
+				<div class="header__closed">
+					<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 25L25 0.999998" stroke="#0094FF" stroke-width="1.6" stroke-linecap="round" />
+						<path d="M1 1.00003L25 25" stroke="#0094FF" stroke-width="1.6" stroke-linecap="round" />
+					</svg>
+				</div>
+				<a href="#" class="logo">
+					<img src="img/icons/logo.svg" alt="">
+				</a>
+				<nav class="menu">
+					<ul>
+						<li>
+							<a href="#">Экскурсии в Красноярске</a>
+						</li>
+						<li>
+							<a href="#">Туры выходного дня</a>
+						</li>
+						<li>
+							<a href="#">Многодневные туры</a>
+						</li>
+						<li>
+							<a href="#">Экскурсии по Хакасии</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__menu">
+					<ul>
+						<li>
+							<a href="#">Полезные статьи</a>
+						</li>
+						<li>
+							<a href="#">Отзывы</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__items">
+					<address class="header__item">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M8 0C4.89838 0 2.375 2.52338 2.375 5.625C2.375 6.67294 2.66528 7.69563 3.21466 8.58288L7.67981 15.7784C7.76534 15.9163 7.91603 16 8.07809 16C8.07934 16 8.08056 16 8.08181 16C8.24528 15.9987 8.39628 15.9124 8.48025 15.7721L12.8316 8.50688C13.3507 7.63838 13.625 6.64184 13.625 5.625C13.625 2.52338 11.1016 0 8 0ZM12.0271 8.02556L8.071 14.6308L4.01147 8.08894C3.55419 7.35044 3.30625 6.49844 3.30625 5.625C3.30625 3.04031 5.41531 0.93125 8 0.93125C10.5847 0.93125 12.6906 3.04031 12.6906 5.625C12.6906 6.47253 12.459 7.30275 12.0271 8.02556Z"
+								fill="#0094FF" />
+							<path
+								d="M8 2.8125C6.44919 2.8125 5.1875 4.07419 5.1875 5.625C5.1875 7.16591 6.42866 8.4375 8 8.4375C9.59072 8.4375 10.8125 7.14897 10.8125 5.625C10.8125 4.07419 9.55081 2.8125 8 2.8125ZM8 7.50625C6.96072 7.50625 6.11875 6.66147 6.11875 5.625C6.11875 4.59113 6.96613 3.74375 8 3.74375C9.03387 3.74375 9.87813 4.59113 9.87813 5.625C9.87813 6.64634 9.05575 7.50625 8 7.50625Z"
+								fill="#0094FF" />
+						</svg>
+						<span>Краcноярск, ул. Пушкинская 10, офис 5</span>
+					</address>
+					<a href="mailto:support@tourguide.ru" class="header__item">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_6001_9853)">
+								<path
+									d="M14.0468 1.91211H1.95655C0.877302 1.91211 0 2.78941 0 3.86866V12.1318C0 13.2111 0.877302 14.0884 1.95655 14.0884H14.0435C15.1227 14.0884 16 13.2111 16 12.1318V3.87197C16.0033 2.79272 15.126 1.91211 14.0468 1.91211ZM15.1095 12.1318C15.1095 12.7178 14.6327 13.1945 14.0468 13.1945H1.95655C1.37058 13.1945 0.893855 12.7178 0.893855 12.1318V3.87197C0.893855 3.286 1.37058 2.80927 1.95655 2.80927H14.0435C14.6294 2.80927 15.1061 3.286 15.1061 3.87197V12.1318H15.1095Z"
+									fill="#0094FF" />
+								<path
+									d="M10.0906 7.89755L14.0037 4.38834C14.1858 4.22281 14.2023 3.94141 14.0368 3.75602C13.8713 3.57394 13.5899 3.55739 13.4045 3.72292L8.00826 8.56628L6.95549 7.62608C6.95218 7.62277 6.94887 7.61946 6.94887 7.61615C6.9257 7.59298 6.90252 7.57311 6.87604 7.55325L2.59216 3.7196C2.40677 3.55408 2.12537 3.57063 1.95984 3.75602C1.79431 3.94141 1.81086 4.22281 1.99626 4.38834L5.9557 7.92734L2.01281 11.6186C1.83404 11.7875 1.82411 12.0689 1.99294 12.251C2.08233 12.3436 2.20151 12.3933 2.32069 12.3933C2.42994 12.3933 2.53919 12.3536 2.62526 12.2741L6.62775 8.52987L7.71361 9.49987C7.79969 9.57601 7.90563 9.61243 8.01157 9.61243C8.11751 9.61243 8.22675 9.5727 8.30952 9.49656L9.42518 8.49676L13.4045 12.2774C13.4906 12.3602 13.6031 12.3999 13.7124 12.3999C13.8316 12.3999 13.9474 12.3536 14.0368 12.2609C14.2056 12.0821 14.199 11.7974 14.0203 11.6286L10.0906 7.89755Z"
+									fill="#0094FF" />
+							</g>
+							<defs>
+								<clipPath id="clip0_6001_9853">
+									<rect width="16" height="16" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+						<span>support@tourguide.ru</span>
+					</a>
+				</div>
+				<div class="header__buttons">
+					<button class="header__buttons-btn btn">Экскурсоводам</button>
+					<button class="header__buttons-btn btn">Организаторам туров</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="page-top">
+	<div class="wrapper">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li>Экскурсии в Красноярске</li>
+			</ul>
+		</div>
+		<h1 class="page-top__title title title_item">Пешеходная экскурсия по историческому центру Красноярска</h1>
+	</div>
+</div>
+
+<section class="page-gallery">
+	<div class="wrapper">
+		<div class="page-gallery__body">
+			<div class="page-gallery__left">
+				<a href="img/excursion/gallery/img-big.jpg" data-fancybox="page-gallery" class="page-gallery__image">
+					<img src="img/excursion/gallery/img-big.jpg" alt="">
+				</a>
+			</div>
+			<div class="page-gallery__right swiper">
+				<div class="swiper-wrapper">
+					<div class="page-gallery__coll swiper-slide">
+						<a href="img/excursion/gallery/img-1.jpg" class="page-gallery__img"
+							data-fancybox="page-gallery">
+							<img src="img/excursion/gallery/img-1.jpg" alt="">
+						</a>
+					</div>
+					<div class="page-gallery__coll swiper-slide">
+						<a href="img/excursion/gallery/img-2.jpg" class="page-gallery__img"
+							data-fancybox="page-gallery">
+							<img src="img/excursion/gallery/img-2.jpg" alt="">
+						</a>
+					</div>
+					<div class="page-gallery__coll swiper-slide">
+						<a href="img/excursion/gallery/img-3.jpg" class="page-gallery__img"
+							data-fancybox="page-gallery">
+							<img src="img/excursion/gallery/img-3.jpg" alt="">
+						</a>
+					</div>
+					<div class="page-gallery__coll swiper-slide">
+						<a href="img/excursion/gallery/img-4.jpg" class="page-gallery__img"
+							data-fancybox="page-gallery">
+							<img src="img/excursion/gallery/img-4.jpg" alt="">
+							<div class="page-gallery__info">
+								<span>+2 фото</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="page">
+	<div class="wrapper">
+		<div class="page__body section-small">
+			<div class="page__wrap">
+
+				<div class="page-info">
+					<div class="page-info__body">
+						<div class="page-info__coll">
+							<div class="page-info__caption caption">Вид экскурсии:</div>
+							<div class="page-info__desc">групповая</div>
+						</div>
+						<div class="page-info__coll">
+							<div class="page-info__caption caption">Сезонность экс-ии:</div>
+							<div class="page-info__desc">круглогодичная</div>
+						</div>
+						<div class="page-info__coll">
+							<div class="page-info__caption caption">Тип экскурсии:</div>
+							<div class="page-info__desc">пешеходная</div>
+						</div>
+						<div class="page-info__coll">
+							<div class="page-info__caption caption">Длительность:</div>
+							<div class="page-info__desc">2 часа</div>
+						</div>
+						<div class="page-info__coll">
+							<div class="page-info__caption caption">Кол-во участников:</div>
+							<div class="page-info__desc">до 20 человек</div>
+						</div>
+						<div class="page-info__coll">
+							<div class="page-info__caption caption">Статус:</div>
+							<div class="page-info__desc">запись открыта</div>
+						</div>
+					</div>
+					<div class="page-info__text">
+						<p>Двух часовая экскурсия по историческому центру Красноярска
+							погрузит вас во времена 400-летней давности. Именно тогда был
+							построен первый деревянный город острог. Вы узнаете какие народы населяли эти сибирские
+							земли, их обычаи. И как город-крепость эволюционировал в мегаполис.</p>
+					</div>
+					<a href="#" class="page-info__btn btn-item">Узнать больше</a>
+				</div>
+
+				<div class="page-organizer section-small">
+					<div class="logo">
+						<img src="img/excursion/logo.svg" alt="">
+					</div>
+					<div class="page-organizer__wrap">
+						<div class="page-organizer__title title title_small">Организатор</div>
+						<div class="page-organizer__rating">
+							<div class="star">
+								<div class="star__active" style="width: 100%;"></div>
+							</div>
+							<div class="page-organizer__rating-caption">5.0</div>
+						</div>
+						<div class="page-organizer__desc">Проводим индивидуальные и групповые экскурсии по городу
+							Красноярску и его окрестоностям.</div>
+						<button class="page-organizer__btn btn">Задать вопрос</button>
+					</div>
+				</div>
+
+				<div class="page-seels section-small">
+					<div class="page-seels__title title title_min">Что увидим</div>
+					<div class="page-seels__row">
+						<div class="page-seels__coll">
+							<div class="page-seels__img">
+								<img src="img/excursion/seels/img-1.jpg" alt="">
+							</div>
+							<div class="page-seels__caption">Красноярск во всей красе</div>
+						</div>
+						<div class="page-seels__coll">
+							<div class="page-seels__img">
+								<img src="img/excursion/seels/img-2.jpg" alt="">
+							</div>
+							<div class="page-seels__caption">Царь-Рыба и живописный Дивногорск</div>
+						</div>
+						<div class="page-seels__coll">
+							<div class="page-seels__img">
+								<img src="img/excursion/seels/img-3.jpg" alt="">
+							</div>
+							<div class="page-seels__caption">Одна из крупнейших мировых электростанций</div>
+						</div>
+					</div>
+					<div class="page-seels__desc">Мы работаем ради ваших впечатлений!</div>
+				</div>
+
+				<div class="page-organization section-small">
+					<div class="page-organization__title title title_min">Организационные моменты</div>
+					<div class="page-organization__body">
+						<div class="page-organization__coll">
+							<div class="page-organization__icon">
+								<img src="img/excursion/organization/location.svg" alt="">
+							</div>
+							<div class="page-organization__desc"><strong>Место встречи:</strong> театральная площадь
+							</div>
+						</div>
+						<div class="page-organization__warning">
+							<div class="page-organization__warning-desc">Возможно, вы остановились где-то рядом или по
+								пути к месту проведения экскурсии и мы сможем вас забрать из отеля. Просто напишите ваш
+								адрес в комментарии к заказу.</div>
+						</div>
+						<div class="page-organization__coll">
+							<div class="page-organization__icon">
+								<img src="img/excursion/organization/time.svg" alt="">
+							</div>
+							<div class="page-organization__desc"><strong>Рекомендуем приехать:</strong> за 10-15 минут
+								до начала экскурсии</div>
+						</div>
+						<div class="page-organization__coll">
+							<div class="page-organization__icon">
+								<img src="img/excursion/organization/child.svg" alt="">
+							</div>
+							<div class="page-organization__desc"><strong>Ограничение по возрасту:</strong> можно с
+								детьми старше 12 лет</div>
+						</div>
+						<div class="page-organization__map">
+							<script type="text/javascript" charset="utf-8" async
+								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad2df3eda2ae93564005f9f1e68f966e0db0386a58316101924277c7bd67d69f3&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+						</div>
+						<div class="page-organization__coll">
+							<div class="page-organization__icon">
+								<img src="img/excursion/organization/check.svg" alt="">
+							</div>
+							<div class="page-organization__desc"><strong>Что входит в стоимость:</strong> услуги гида,
+								услуги транспорта</div>
+						</div>
+						<div class="page-organization__coll">
+							<div class="page-organization__icon">
+								<img src="img/excursion/organization/error.svg" alt="">
+							</div>
+							<div class="page-organization__desc"><strong>Что оплачивается отдельно:</strong> сувениры,
+								обед в кафе, билеты в музеи, подъем на канатной дороге</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="page-reviews section-small">
+					<div class="page-reviews__title title title_litle">Отзывы туристов</div>
+					<div class="page-reviews__body">
+						<div class="review-card">
+							<div class="review-card__top">
+								<div class="review-card__avatar cover">
+									<span>C</span>
+								</div>
+								<div class="review-card__top-wrap">
+									<div class="review-card__top-box">
+										<div class="review-card__name">Светлана</div>
+										<div class="review-card__dots"></div>
+										<div class="review-card__date">06.04.2024</div>
+									</div>
+									<div class="star">
+										<div class="star__active" style="width: 100%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="review-card__desc">
+								<p>Побывали на многих экскурсиях, но больше всех запала в душу экскурсия «Остров
+									утопия». Очень душевно провели время. Благодарим за эмоции и впечатления!
+									Процветания тебе и хороших туристов.</p>
+							</div>
+						</div>
+						<div class="review-card">
+							<div class="review-card__top">
+								<div class="review-card__avatar cover">
+									<img src="img/review-card/avatar-2.png" alt="">
+								</div>
+								<div class="review-card__top-wrap">
+									<div class="review-card__top-box">
+										<div class="review-card__name">Юлия</div>
+										<div class="review-card__dots"></div>
+										<div class="review-card__date">06.04.2024</div>
+									</div>
+									<div class="star">
+										<div class="star__active" style="width: 80%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="review-card__desc">
+								<p>Побывали на многих экскурсиях, но больше всех запала в душу экскурсия «Остров
+									утопия». Очень душевно провели время. Благодарим за эмоции и впечатления!
+									Процветания тебе и хороших туристов.</p>
+							</div>
+						</div>
+						<div class="review-card">
+							<div class="review-card__top">
+								<div class="review-card__avatar cover">
+									<img src="img/review-card/avatar-3.png" alt="">
+								</div>
+								<div class="review-card__top-wrap">
+									<div class="review-card__top-box">
+										<div class="review-card__name">Анастасия</div>
+										<div class="review-card__dots"></div>
+										<div class="review-card__date">06.04.2024</div>
+									</div>
+									<div class="star">
+										<div class="star__active" style="width: 100%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="review-card__desc">
+								<p>Побывали на многих экскурсиях, но больше всех запала в душу экскурсия «Остров
+									утопия». Очень душевно провели время. Благодарим за эмоции и впечатления!
+									Процветания тебе и хороших туристов.</p>
+							</div>
+						</div>
+					</div>
+					<div class="page-order">
+						<div class="page-order__title title title_litle">Оставьте свой отзыв</div>
+						<form action="#" class="page-order-form form">
+							<div class="page-order-form__body">
+								<label class="form__label form__label_table">
+									<div class="form__caption">Ваше имя</div>
+									<input type="text" class="page-order-form__field field"
+										placeholder="Например, Иван">
+								</label>
+								<label class="form__label">
+									<div class="form__caption">Электронная почта</div>
+									<input type="text" class="page-order-form__field field"
+										placeholder="example@mail.ru">
+								</label>
+								<label class="form__label">
+									<div class="form__caption">Номер заказа</div>
+									<input type="text" class="page-order-form__field field"
+										placeholder="example@mail.ru">
+								</label>
+								<label class="form__label form__label_big">
+									<div class="form__caption">Ваш отзыв</div>
+									<textarea class="page-order-form__field field"
+										placeholder="Текст отзыва..."></textarea>
+								</label>
+							</div>
+							<div class="page-order-form__bottom">
+								<div class="page-order-form__rating">
+									<div class="page-order-form__rating-caption">Ваша оценка:</div>
+									<div class="rating rating-validate--js">
+										<div class="rating__stars">
+											<input name="appearance" value="5" id="appearance_5" type="radio">
+											<label for="appearance_5" class="rating__value"></label>
+											<input name="appearance" value="4" id="appearance_4" type="radio">
+											<label for="appearance_4" class="rating__value"></label>
+											<input name="appearance" value="3" id="appearance_3" type="radio">
+											<label for="appearance_3" class="rating__value"></label>
+											<input name="appearance" value="2" id="appearance_2" type="radio">
+											<label for="appearance_2" class="rating__value"></label>
+											<input name="appearance" value="1" id="appearance_1" type="radio">
+											<label for="appearance_1" class="rating__value"></label>
+										</div>
+									</div>
+								</div>
+								<label class="checkbox">
+									<input type="checkbox" name="Telegram" value="active">
+									<div class="checkbox__icon">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M13.7799 4.22007C13.9204 4.3607 13.9993 4.55132 13.9993 4.75007C13.9993 4.94882 13.9204 5.13945 13.7799 5.28007L6.52994 12.5301C6.38932 12.6705 6.19869 12.7494 5.99994 12.7494C5.80119 12.7494 5.61057 12.6705 5.46994 12.5301L2.21994 9.28007C2.08754 9.13781 2.01543 8.94976 2.01879 8.75544C2.02215 8.56113 2.1007 8.37568 2.23794 8.23807C2.37555 8.10083 2.561 8.02227 2.75531 8.01892C2.94963 8.01556 3.13768 8.08766 3.27994 8.22007L5.99994 10.9401L12.7199 4.22007C12.8606 4.07962 13.0512 4.00073 13.2499 4.00073C13.4487 4.00073 13.6393 4.07962 13.7799 4.22007Z"
+												fill="#0094FF" />
+										</svg>
+									</div>
+									<div class="checkbox__box">
+										<div class="checkbox__desc">Даю согласие на обработку своих персональных
+											данных</div>
+									</div>
+								</label>
+								<button class="page-order-form__btn btn">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="page-tags">
+					<div class="page-tags__title title title_litle">Теги:</div>
+					<div class="page-tags__body">
+						<div class="tag">Обзорная</div>
+						<div class="tag">ГЭС</div>
+						<div class="tag">Столбы</div>
+						<div class="tag">Царь-рыба</div>
+						<div class="tag">Дивногорск</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="page__aside">
+				<div class="page__aside-table"></div>
+				<div class="page-aside">
+					<form class="page-filter form">
+						<div class="page-filter__container">
+							<div class="page-filter__top">
+								<label class="form__label">
+									<div class="form__caption">Дата</div>
+									<div class="select">
+										<div class="select-title">
+											<div class="select-title__value">03.04.2024</div>
+											<div class="select-title__arrow">
+												<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_2088_3681)">
+														<path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#444444"
+															stroke-width="1.25" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</g>
+													<defs>
+														<clipPath id="clip0_2088_3681">
+															<rect width="14" height="14" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</div>
+										</div>
+										<div class="select-options">
+											<div class="select-options__wrap">
+												<div class="select-options__value" data-id-select="03.04.2024">
+													03.04.2024
+												</div>
+												<div class="select-options__value" data-id-select="04.04.2024">
+													04.04.2024
+												</div>
+												<div class="select-options__value" data-id-select="05.04.2024">
+													05.04.2024
+												</div>
+												<div class="select-options__value" data-id-select="06.04.2024">
+													06.04.2024
+												</div>
+												<div class="select-options__value" data-id-select="07.04.2024">
+													07.04.2024
+												</div>
+												<div class="select-options__value" data-id-select="08.04.2024">
+													08.04.2024
+												</div>
+												<input type="hidden" name="type" value="03.04.2024">
+											</div>
+										</div>
+									</div>
+								</label>
+								<label class="form__label">
+									<div class="form__caption">Время</div>
+									<div class="select">
+										<div class="select-title">
+											<div class="select-title__value">15:00</div>
+											<div class="select-title__arrow">
+												<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_2088_3681)">
+														<path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#444444"
+															stroke-width="1.25" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</g>
+													<defs>
+														<clipPath id="clip0_2088_3681">
+															<rect width="14" height="14" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</div>
+										</div>
+										<div class="select-options">
+											<div class="select-options__wrap">
+												<div class="select-options__value" data-id-select="15:00">15:00</div>
+												<div class="select-options__value" data-id-select="16:00">16:00</div>
+												<div class="select-options__value" data-id-select="17:00">17:00</div>
+												<div class="select-options__value" data-id-select="18:00">18:00</div>
+												<input type="hidden" name="type" value="15:00">
+											</div>
+										</div>
+									</div>
+								</label>
+								<label class="form__label form__label_big">
+									<div class="form__caption">Количество участников</div>
+									<div class="select">
+										<div class="select-title">
+											<div class="select-title__value">2 человека</div>
+											<div class="select-title__arrow">
+												<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_2088_3681)">
+														<path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#444444"
+															stroke-width="1.25" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</g>
+													<defs>
+														<clipPath id="clip0_2088_3681">
+															<rect width="14" height="14" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</div>
+										</div>
+										<div class="select-options">
+											<div class="select-options__wrap">
+												<div class="select-options__value" data-id-select="1 человека">1
+													человека
+												</div>
+												<div class="select-options__value" data-id-select="2 человека">2
+													человека
+												</div>
+												<div class="select-options__value" data-id-select="3 человека">3
+													человека
+												</div>
+												<input type="hidden" name="type" value="2 человека">
+											</div>
+										</div>
+									</div>
+								</label>
+								<div class="page-filter__top-wrap">
+									<label class="form__label">
+										<div class="form__caption">Взрослые</div>
+										<div class="select">
+											<div class="select-title">
+												<div class="select-title__value">1 <span>(5 000 ₽)</span></div>
+												<div class="select-title__arrow">
+													<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_2088_3681)">
+															<path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#444444"
+																stroke-width="1.25" stroke-linecap="round"
+																stroke-linejoin="round" />
+														</g>
+														<defs>
+															<clipPath id="clip0_2088_3681">
+																<rect width="14" height="14" fill="white" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+											<div class="select-options">
+												<div class="select-options__wrap">
+													<div class="select-options__value"
+														data-id-select="1 <span>(5 000 ₽)</span>">1 <span>(5 000
+															₽)</span>
+													</div>
+													<div class="select-options__value"
+														data-id-select="2 <span>(8 000 ₽)</span>">2 <span>(8 000
+															₽)</span>
+													</div>
+													<div class="select-options__value"
+														data-id-select="3 <span>(10 000 ₽)</span>">3 <span>(10 000
+															₽)</span>
+													</div>
+													<input type="hidden" name="type" value="1 <span>(5 000 ₽)</span>">
+												</div>
+											</div>
+										</div>
+									</label>
+									<label class="form__label">
+										<div class="form__caption">Дети</div>
+										<div class="select">
+											<div class="select-title">
+												<div class="select-title__value">1 <span>(4 000 ₽)</span></div>
+												<div class="select-title__arrow">
+													<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_2088_3681)">
+															<path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#444444"
+																stroke-width="1.25" stroke-linecap="round"
+																stroke-linejoin="round" />
+														</g>
+														<defs>
+															<clipPath id="clip0_2088_3681">
+																<rect width="14" height="14" fill="white" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+											<div class="select-options">
+												<div class="select-options__wrap">
+													<div class="select-options__value"
+														data-id-select="1 <span>(4 000 ₽)</span>">1 <span>(4 000
+															₽)</span>
+													</div>
+													<div class="select-options__value"
+														data-id-select="2 <span>(6 000 ₽)</span>">2 <span>(6 000
+															₽)</span>
+													</div>
+													<div class="select-options__value"
+														data-id-select="3 <span>(10 000 ₽)</span>">3 <span>(10 000
+															₽)</span>
+													</div>
+													<input type="hidden" name="type" value="1 <span>(4 000 ₽)</span>">
+												</div>
+											</div>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="page-filter__container">
+							<div class="page-filter__price">
+								<div class="page-filter__price-caption">Стоимость за человека:</div>
+								<div class="page-filter__price-wrap">
+									<div class="page-filter__price-left">
+										<div class="page-filter__price-value">5 000 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-filter__container">
+							<div class="page-filter__form">
+								<div class="page-filter__form-body">
+									<label class="form__label">
+										<div class="form__caption">Имя</div>
+										<input type="text" class="page-order-form__field field" placeholder="Иван">
+									</label>
+									<label class="form__label">
+										<div class="form__caption">Фамилия</div>
+										<input type="text" class="page-order-form__field field" placeholder="Иванов">
+									</label>
+									<label class="form__label">
+										<div class="form__caption">Телефон</div>
+										<input type="text" class="page-order-form__field field"
+											placeholder="+7 (123) 456-78-90">
+									</label>
+									<label class="form__label">
+										<div class="form__caption">E-mail</div>
+										<input type="text" class="page-order-form__field field"
+											placeholder="example@mail.ru">
+									</label>
+									<label class="form__label form__label_big">
+										<div class="form__caption">Комментарий</div>
+										<textarea class="page-order-form__field field"
+											placeholder="Комментарий к заказу необязателен..."></textarea>
+									</label>
+								</div>
+								<div class="page-filter__form-bottom">
+									<label class="checkbox">
+										<input type="checkbox" name="Telegram" value="active">
+										<div class="checkbox__icon">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M13.7799 4.22007C13.9204 4.3607 13.9993 4.55132 13.9993 4.75007C13.9993 4.94882 13.9204 5.13945 13.7799 5.28007L6.52994 12.5301C6.38932 12.6705 6.19869 12.7494 5.99994 12.7494C5.80119 12.7494 5.61057 12.6705 5.46994 12.5301L2.21994 9.28007C2.08754 9.13781 2.01543 8.94976 2.01879 8.75544C2.02215 8.56113 2.1007 8.37568 2.23794 8.23807C2.37555 8.10083 2.561 8.02227 2.75531 8.01892C2.94963 8.01556 3.13768 8.08766 3.27994 8.22007L5.99994 10.9401L12.7199 4.22007C12.8606 4.07962 13.0512 4.00073 13.2499 4.00073C13.4487 4.00073 13.6393 4.07962 13.7799 4.22007Z"
+													fill="#0094FF" />
+											</svg>
+										</div>
+										<div class="checkbox__box">
+											<div class="checkbox__desc">Даю согласие на <a href="#">обработку своих
+													персональных данных</a> и принимаю условия <a href="#">договора
+													оферты</a></div>
+										</div>
+									</label>
+									<button class="page-filter__form-btn btn">Забронировать</button>
+								</div>
+							</div>
+						</div>
+						<div class="page-filter__container">
+							<div class="page-filter__coll">
+								<div class="page-filter__coll-icon">
+									<img src="img/icons/filter/icon-1.svg" alt="">
+								</div>
+								<div class="page-filter__coll-desc">Бронь не подтверждается, если до начала мероприятия
+									осталось <strong>менее 18 часов</strong></div>
+							</div>
+							<div class="page-filter__coll">
+								<div class="page-filter__coll-icon">
+									<img src="img/icons/filter/icon-2.svg" alt="">
+								</div>
+								<div class="page-filter__coll-desc"><strong>Бесплатная</strong> отмена бронирования за
+									72
+									часа</div>
+							</div>
+							<div class="page-filter__coll">
+								<div class="page-filter__coll-icon">
+									<img src="img/icons/filter/icon-3.svg" alt="">
+								</div>
+								<div class="page-filter__coll-desc">После оплаты, платежный документ придет <strong>вам
+										на
+										почту</strong></div>
+							</div>
+						</div>
+					</form>
+					<div class="page-faq">
+						<div class="page-faq__title title title_litle">У вас есть вопросы?</div>
+						<button class="page-faq__btn btn">Задать вопрос гиду</button>
+					</div>
+					<div class="page-chat">
+						<div class="page-chat__title title title_litle">Перейти в чат</div>
+						<div class="page-chat__social">
+							<a href="#" class="page-chat__link">
+								<img src="img/icons/chat/wa.svg" alt="">
+							</a>
+							<a href="#" class="page-chat__link">
+								<img src="img/icons/chat/vib.svg" alt="">
+							</a>
+							<a href="#" class="page-chat__link">
+								<img src="img/icons/chat/tg.svg" alt="">
+							</a>
+							<a href="#" class="page-chat__link">
+								<img src="img/icons/chat/vk.svg" alt="">
+							</a>
+						</div>
+						<div class="page-chat__desc">Обзоры необычных мест по всему миру, новинки и скидки в наших
+							соцсетях
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="wrapper">
+		<div class="footer-top">
+			<div class="footer-top__first">
+				<a href="#" class="logo">
+					<img src="img/icons/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="footer-top__container">
+				<nav class="footer__menu">
+					<ul>
+						<li>
+							<a href="#">Экскурсии по Красноярску</a>
+						</li>
+						<li>
+							<a href="#">Туры выходного дня</a>
+						</li>
+						<li>
+							<a href="#">Многодневные туры</a>
+						</li>
+						<li>
+							<a href="#">Экскурсии по Хакасии</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="footer__menu">
+					<ul>
+						<li>
+							<a href="#">Полезные статьи</a>
+						</li>
+						<li>
+							<a href="#">Отзывы</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="footer__menu">
+					<ul>
+						<li>
+							<a href="#">Политика конфиденциальности</a>
+						</li>
+						<li>
+							<a href="#">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a href="#">Политика возврата</a>
+						</li>
+						<li>
+							<a href="#">Договор оферты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="footer-center">
+			<div class="footer__items">
+				<address class="footer__item">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M8 0C4.89838 0 2.375 2.52338 2.375 5.625C2.375 6.67294 2.66528 7.69563 3.21466 8.58288L7.67981 15.7784C7.76534 15.9163 7.91603 16 8.07809 16C8.07934 16 8.08056 16 8.08181 16C8.24528 15.9987 8.39628 15.9124 8.48025 15.7721L12.8316 8.50688C13.3507 7.63838 13.625 6.64184 13.625 5.625C13.625 2.52338 11.1016 0 8 0ZM12.0271 8.02556L8.071 14.6308L4.01147 8.08894C3.55419 7.35044 3.30625 6.49844 3.30625 5.625C3.30625 3.04031 5.41531 0.93125 8 0.93125C10.5847 0.93125 12.6906 3.04031 12.6906 5.625C12.6906 6.47253 12.459 7.30275 12.0271 8.02556Z"
+							fill="#0094FF" />
+						<path
+							d="M8 2.8125C6.44919 2.8125 5.1875 4.07419 5.1875 5.625C5.1875 7.16591 6.42866 8.4375 8 8.4375C9.59072 8.4375 10.8125 7.14897 10.8125 5.625C10.8125 4.07419 9.55081 2.8125 8 2.8125ZM8 7.50625C6.96072 7.50625 6.11875 6.66147 6.11875 5.625C6.11875 4.59113 6.96613 3.74375 8 3.74375C9.03387 3.74375 9.87813 4.59113 9.87813 5.625C9.87813 6.64634 9.05575 7.50625 8 7.50625Z"
+							fill="#0094FF" />
+					</svg>
+					<span>Краcноярск, ул. Пушкинская 10, офис 5</span>
+				</address>
+				<a href="mailto:support@tourguide.ru" class="footer__item">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_6001_9853)">
+							<path
+								d="M14.0468 1.91211H1.95655C0.877302 1.91211 0 2.78941 0 3.86866V12.1318C0 13.2111 0.877302 14.0884 1.95655 14.0884H14.0435C15.1227 14.0884 16 13.2111 16 12.1318V3.87197C16.0033 2.79272 15.126 1.91211 14.0468 1.91211ZM15.1095 12.1318C15.1095 12.7178 14.6327 13.1945 14.0468 13.1945H1.95655C1.37058 13.1945 0.893855 12.7178 0.893855 12.1318V3.87197C0.893855 3.286 1.37058 2.80927 1.95655 2.80927H14.0435C14.6294 2.80927 15.1061 3.286 15.1061 3.87197V12.1318H15.1095Z"
+								fill="#0094FF" />
+							<path
+								d="M10.0906 7.89755L14.0037 4.38834C14.1858 4.22281 14.2023 3.94141 14.0368 3.75602C13.8713 3.57394 13.5899 3.55739 13.4045 3.72292L8.00826 8.56628L6.95549 7.62608C6.95218 7.62277 6.94887 7.61946 6.94887 7.61615C6.9257 7.59298 6.90252 7.57311 6.87604 7.55325L2.59216 3.7196C2.40677 3.55408 2.12537 3.57063 1.95984 3.75602C1.79431 3.94141 1.81086 4.22281 1.99626 4.38834L5.9557 7.92734L2.01281 11.6186C1.83404 11.7875 1.82411 12.0689 1.99294 12.251C2.08233 12.3436 2.20151 12.3933 2.32069 12.3933C2.42994 12.3933 2.53919 12.3536 2.62526 12.2741L6.62775 8.52987L7.71361 9.49987C7.79969 9.57601 7.90563 9.61243 8.01157 9.61243C8.11751 9.61243 8.22675 9.5727 8.30952 9.49656L9.42518 8.49676L13.4045 12.2774C13.4906 12.3602 13.6031 12.3999 13.7124 12.3999C13.8316 12.3999 13.9474 12.3536 14.0368 12.2609C14.2056 12.0821 14.199 11.7974 14.0203 11.6286L10.0906 7.89755Z"
+								fill="#0094FF" />
+						</g>
+						<defs>
+							<clipPath id="clip0_6001_9853">
+								<rect width="16" height="16" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+					<span>support@tourguide.ru</span>
+				</a>
+			</div>
+			<div class="footer__buttons">
+				<button class="footer__btn btn">Экскурсоводам</button>
+				<button class="footer__btn btn">Организаторам туров</button>
+			</div>
+			<nav class="footer__menu">
+				<ul>
+					<li>
+						<a href="#">Политика конфиденциальности</a>
+					</li>
+					<li>
+						<a href="#">Пользовательское соглашение</a>
+					</li>
+					<li>
+						<a href="#">Политика возврата</a>
+					</li>
+					<li>
+						<a href="#">Договор оферты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer__copiright">© 2024 Тур Гид – экскурсии и туры</div>
+			<div class="footer__payment">
+				<div class="footer__payment-caption">Принимаем к оплате:</div>
+				<div class="footer__payment-wrap">
+					<div class="footer__payment-icon">
+						<img src="img/icons/payments/icon-1.svg" alt="">
+					</div>
+					<div class="footer__payment-icon">
+						<img src="img/icons/payments/icon-2.svg" alt="">
+					</div>
+					<div class="footer__payment-icon">
+						<img src="img/icons/payments/icon-3.svg" alt="">
+					</div>
+					<div class="footer__payment-icon">
+						<img src="img/icons/payments/icon-4.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</main>
+<script src="js/libs.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>

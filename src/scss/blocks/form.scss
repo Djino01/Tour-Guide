@@ -3,4 +3,11 @@
 		display: block;
 		position: relative;
 	}
+	&__caption {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 100%;
+		color: var(--text-black);
+		margin-bottom: 8px;
+	}
 }
