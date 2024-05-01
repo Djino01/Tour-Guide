@@ -1,0 +1,39 @@
+.popular-tours {
+	padding-top: 34px;
+	&__wrap {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+		margin-top: 40px;
+	}
+}
+@media (max-width: 1470px) {
+}
+@media (max-width: 1399px) {
+	.popular-tours {
+		&__wrap {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+@media (max-width: 1279px) {
+}
+@media (max-width: 1099px) {
+}
+@media (max-width: 1010px) {
+	.popular-tours {
+		padding-top: 2px;
+		&__wrap {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+@media (max-width: 760px) {
+	.popular-tours {
+		padding-top: 2px;
+		&__wrap {
+			grid-template-columns: repeat(1, 1fr);
+			margin-top: 30px;
+		}
+	}
+}

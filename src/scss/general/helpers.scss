@@ -522,6 +522,46 @@
 	}
 }
 
+.navigation {
+	margin-top: 10px;
+	.nav-links {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+	}
+	.page-numbers {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		background-color: #fff;
+		border-radius: 100%;
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 100%;
+		text-align: center;
+		color: var(--text-black);
+		transition: all 0.3s;
+		svg {
+			* {
+				transition: all 0.3s;
+			}
+		}
+		&.current,
+		&:hover {
+			color: var(--fill-white);
+			background-color: var(--fill-blue);
+			svg {
+				* {
+					stroke: var(--fill-white);
+				}
+			}
+		}
+	}
+}
+
 .swiper-container-horizontal {
 	& > .swiper-pagination-bullets {
 		.swiper-pagination-bullet {
@@ -560,6 +600,9 @@
 	.section {
 		margin-top: 80px;
 		margin-bottom: 80px;
+	}
+	.navigation {
+		margin-top: 20px;
 	}
 }
 @media (max-width: 760px) {
@@ -628,6 +671,9 @@
 				stroke: #0094ff;
 			}
 		}
+	}
+	.navigation {
+		margin-top: 0px;
 	}
 }
 

@@ -103,6 +103,19 @@
 			}
 		}
 	}
+	&__location {
+		display: inline-flex;
+		border-radius: 50px;
+		padding: 6px 10px;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 100%;
+		color: var(--fill-blue);
+		background: var(--fill-blue-light-10);
+		position: relative;
+		top: -2px;
+		margin-bottom: 12px;
+	}
 	&__caption {
 		display: block;
 		font-weight: 700;
@@ -115,6 +128,7 @@
 		}
 	}
 	&__desc {
+		min-height: 64px;
 		font-size: 14px;
 		line-height: 150%;
 		color: var(--text-gray-dark);
@@ -134,7 +148,7 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 15px;
-		margin-bottom: 25px;
+		margin-bottom: 27px;
 	}
 	&__price {
 		font-weight: 600;
@@ -164,6 +178,27 @@
 		display: flex;
 		gap: 4px;
 		flex-wrap: wrap;
+	}
+	&__period {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		&-date {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 150%;
+			color: var(--text-black);
+		}
+		&-info {
+			display: inline-flex;
+			border-radius: 50px;
+			padding: 6px 10px;
+			background: var(--fill-blue-light-10);
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 100%;
+			color: var(--fill-blue);
+		}
 	}
 	&__btn {
 		width: 100%;
@@ -228,6 +263,11 @@
 	.card {
 		&__caption {
 			margin-right: -5px;
+			font-size: 16px;
+		}
+		&__location {
+			top: 0px;
+			margin-bottom: 15px;
 		}
 	}
 }
