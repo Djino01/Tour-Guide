@@ -1,0 +1,84 @@
+.upload {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	flex: 1;
+	margin-top: 22px;
+	.inputfile {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+	&__body {
+		min-width: 470px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__box {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		border: 1px solid var(--fill-gray-stroke-light);
+		border-radius: 6px;
+		padding: 18px 15px;
+		width: 100%;
+		height: 50px;
+		background-color: var(--fill-white);
+		cursor: pointer;
+		overflow: hidden;
+	}
+	&__icon {
+		width: 24px;
+		height: 24px;
+		svg {
+			& * {
+				transition: all 0.3s ease;
+			}
+		}
+	}
+	&__caption {
+		font-size: 14px;
+		line-height: 100%;
+		color: var(--text-black);
+		span {
+			color: var(--text-gray-light);
+		}
+	}
+	&__btn {
+		border-radius: 6px;
+		width: 50px;
+		height: 50px;
+		background-color: var(--fill-blue);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+}
+@media (max-width: 1470px) {
+}
+@media (max-width: 1279px) {
+}
+@media (max-width: 1099px) {
+	.upload {
+		&__body {
+			min-width: calc(100% - 60px);
+		}
+		&__caption {
+			span {
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+	.upload {
+		margin-top: 0px;
+	}
+}
