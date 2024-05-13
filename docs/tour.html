@@ -231,7 +231,7 @@
 						<div class="page-organizer__desc">Туроператор “Альмира” - организуем туры выходного дня, сплавы
 							по Мане, походы в Ергаки, на столбы. Экскурсии в пещеры: Большая решная, Жемчужная, Радужная
 						</div>
-						<button class="page-organizer__btn btn">Задать вопрос</button>
+						<button class="page-organizer__btn btn callback--js">Задать вопрос</button>
 					</div>
 				</div>
 
@@ -962,7 +962,7 @@
 					</form>
 					<div class="page-faq">
 						<div class="page-faq__title title title_litle">У вас есть вопросы?</div>
-						<button class="page-faq__btn btn">Задать вопрос гиду</button>
+						<button class="page-faq__btn btn callback--js">Задать вопрос гиду</button>
 					</div>
 					<div class="page-chat">
 						<div class="page-chat__title title title_litle">Перейти в чат</div>
@@ -990,6 +990,62 @@
 		</div>
 	</div>
 </div>
+
+<div id="callback-modal" class="callback-modal modal" style="display: none;">
+	<div class="modal__closed" data-fancybox-close>
+		<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g clip-path="url(#clip0_725:818)">
+				<path d="M72 0L0 72" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+				<path d="M4.05312e-06 0L72 72" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+			</g>
+			<defs>
+				<clipPath id="clip0_725:818">
+					<rect width="72" height="72" fill="currentColor" />
+				</clipPath>
+			</defs>
+		</svg>
+	</div>
+	<div class="modal__body">
+		<div class="modal__wrap">
+			<div class="modal__title title">Задать вопрос</div>
+			<form action="#" class="modal__form form">
+				<div class="modal__form-body">
+					<label class="form__label form__label_table">
+						<div class="form__caption">Ваше имя</div>
+						<input type="text" class="page-order-form__field field" placeholder="">
+					</label>
+					<label class="form__label form__label_table">
+						<div class="form__caption">Ваше телефон</div>
+						<input type="text" class="page-order-form__field field phone-mask" placeholder="">
+					</label>
+					<label class="form__label form__label_big">
+						<div class="form__caption">Ваш вопрос</div>
+						<textarea class="page-order-form__field field" placeholder=""></textarea>
+					</label>
+				</div>
+				<div class="modal__form-bottom">
+					<label class="checkbox">
+						<input type="checkbox" name="Telegram" value="active">
+						<div class="checkbox__icon">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M13.7799 4.22007C13.9204 4.3607 13.9993 4.55132 13.9993 4.75007C13.9993 4.94882 13.9204 5.13945 13.7799 5.28007L6.52994 12.5301C6.38932 12.6705 6.19869 12.7494 5.99994 12.7494C5.80119 12.7494 5.61057 12.6705 5.46994 12.5301L2.21994 9.28007C2.08754 9.13781 2.01543 8.94976 2.01879 8.75544C2.02215 8.56113 2.1007 8.37568 2.23794 8.23807C2.37555 8.10083 2.561 8.02227 2.75531 8.01892C2.94963 8.01556 3.13768 8.08766 3.27994 8.22007L5.99994 10.9401L12.7199 4.22007C12.8606 4.07962 13.0512 4.00073 13.2499 4.00073C13.4487 4.00073 13.6393 4.07962 13.7799 4.22007Z"
+									fill="#0094FF" />
+							</svg>
+						</div>
+						<div class="checkbox__box">
+							<div class="checkbox__desc">Даю согласие на <a href="#">обработку своих
+									персональных данных</a> и принимаю условия <a href="#">договора
+									оферты</a></div>
+						</div>
+					</label>
+					<button class="page-filter__form-btn btn">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div><!-- end callback-modal -->
 
 <footer class="footer">
 	<div class="wrapper">
