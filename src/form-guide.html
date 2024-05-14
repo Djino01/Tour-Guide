@@ -44,56 +44,66 @@ color: 'header--child'
 				</label>
 			</div>
 			<div class="brief-form__wrap brief-form__location section-small">
-				<label class="form__label form__label_table">
-					<div class="form__caption">Укажите локации, которые увидят туристы</div>
-					<input type="text" class="brief-form__field field" placeholder="Название локации”">
-				</label>
-				<div class="upload">
-					<div class="upload__body">
-						<div class="upload-file">
-							<input type="file" multiple name="file-1[]" id="file-1" required class="inputfile">
-							<label for="file-1" class="upload__box">
-								<span class="upload__icon">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0_2297_9942)">
-											<path
-												d="M4 17V19C4 19.5304 4.21071 20.0391 4.58579 20.4142C4.96086 20.7893 5.46957 21 6 21H18C18.5304 21 19.0391 20.7893 19.4142 20.4142C19.7893 20.0391 20 19.5304 20 19V17"
-												stroke="#0094FF" stroke-width="1.5" stroke-linecap="round"
-												stroke-linejoin="round" />
-											<path d="M7 11L12 16L17 11" stroke="#0094FF" stroke-width="1.5"
-												stroke-linecap="round" stroke-linejoin="round" />
-											<path d="M12 4V16" stroke="#0094FF" stroke-width="1.5"
-												stroke-linecap="round" stroke-linejoin="round" />
-										</g>
-										<defs>
-											<clipPath id="clip0_2297_9942">
-												<rect width="24" height="24" fill="white" />
-											</clipPath>
-										</defs>
-									</svg>
-								</span>
-								<span class="upload__caption">Загрузите изображение <span>(JPG, JPEG, PNG. Размер до 2
-										Мб)</span></span>
+				<div class="brief-form-location">
+					<div class="brief-form-location__body">
+						<div class="brief-form-location__wrap">
+							<label class="form__label form__label_table">
+								<div class="form__caption">Укажите локации, которые увидят туристы</div>
+								<input type="text" class="brief-form__field field" name="location[]"
+									placeholder="Название локации”">
 							</label>
+							<div class="upload">
+								<div class="upload__body">
+									<div class="upload-file">
+										<input type="file" multiple name="file[]" id="file-1" required
+											class="inputfile">
+										<label for="file-1" class="upload__box">
+											<span class="upload__icon">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_2297_9942)">
+														<path
+															d="M4 17V19C4 19.5304 4.21071 20.0391 4.58579 20.4142C4.96086 20.7893 5.46957 21 6 21H18C18.5304 21 19.0391 20.7893 19.4142 20.4142C19.7893 20.0391 20 19.5304 20 19V17"
+															stroke="#0094FF" stroke-width="1.5" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path d="M7 11L12 16L17 11" stroke="#0094FF" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M12 4V16" stroke="#0094FF" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</g>
+													<defs>
+														<clipPath id="clip0_2297_9942">
+															<rect width="24" height="24" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</span>
+											<span class="upload__caption">Загрузите изображение <span>(JPG, JPEG, PNG.
+													Размер до
+													2
+													Мб)</span></span>
+										</label>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<button class="upload__btn">
-						<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0_2297_9948)">
-								<path d="M15 6.25V23.75" stroke="white" stroke-width="1.5" stroke-linecap="round"
-									stroke-linejoin="round" />
-								<path d="M6.25 15H23.75" stroke="white" stroke-width="1.5" stroke-linecap="round"
-									stroke-linejoin="round" />
-							</g>
-							<defs>
-								<clipPath id="clip0_2297_9948">
-									<rect width="30" height="30" fill="white" />
-								</clipPath>
-							</defs>
-						</svg>
-					</button>
 				</div>
+				<button class="upload__btn">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_2297_9948)">
+							<path d="M15 6.25V23.75" stroke="white" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M6.25 15H23.75" stroke="white" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</g>
+						<defs>
+							<clipPath id="clip0_2297_9948">
+								<rect width="30" height="30" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</button>
 			</div>
 			<div class="brief-form__wrap section-small">
 				<label class="form__label form__label_normal form__label_table">

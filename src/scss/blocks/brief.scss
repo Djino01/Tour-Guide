@@ -21,12 +21,47 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 30px;
+			position: relative;
 		}
 		&__location {
-			gap: 20px;
+			gap: 10px;
 			.form {
 				&__label {
-					width: calc(31% - 26px);
+					width: 420px;
+				}
+			}
+			.upload {
+				&__btn {
+					margin-top: 21px;
+				}
+				&__deleate {
+					position: absolute;
+					border-radius: 6px;
+					width: 50px;
+					height: 50px;
+					background-color: #e91d25;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+					right: -60px;
+					bottom: 0;
+					color: #fff;
+					font-size: 32px;
+					transition: all 0.3s;
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+		&-location {
+			&__wrap {
+				display: flex;
+				gap: 20px;
+				position: relative;
+				& + & {
+					margin-top: 16px;
 				}
 			}
 		}
@@ -198,6 +233,27 @@
 				justify-content: center;
 				cursor: pointer;
 			}
+			.program {
+				&__deleate {
+					position: absolute;
+					border-radius: 6px;
+					width: 50px;
+					height: 50px;
+					background-color: #e91d25;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+					right: -60px;
+					bottom: 0;
+					color: #fff;
+					font-size: 32px;
+					transition: all 0.3s;
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
 		}
 		&__corporate {
 			display: flex;
@@ -250,6 +306,7 @@
 	display: flex;
 	align-items: center;
 	min-width: 705px;
+	position: relative;
 	&__caption {
 		width: 80px;
 		font-size: 14px;
@@ -357,7 +414,16 @@
 				}
 				.upload {
 					width: calc(50% - 10px);
+					&__body {
+						min-width: 100%;
+					}
+					&__deleate {
+						right: -70px;
+					}
 				}
+			}
+			&-location {
+				width: calc(100% - 70px);
 			}
 			&__corporate {
 				padding-top: 0;
@@ -426,14 +492,34 @@
 				}
 			}
 			&__location {
-				gap: 10px;
+				gap: 0px;
+				position: relative;
+				width: 100%;
 				.form {
 					&__label {
 						width: 100%;
 					}
 				}
 				.upload {
-					width: 100%;
+					width: calc(100% - 60px);
+					&__btn {
+						margin-top: 0;
+						position: absolute;
+						right: 0;
+						top: 82px;
+						z-index: 10;
+					}
+					&__deleate {
+						right: 0px;
+					}
+				}
+			}
+			&-location {
+				width: 100%;
+				&__wrap {
+					gap: 10px;
+					position: relative;
+					flex-direction: column;
 				}
 			}
 			&__container {
@@ -468,6 +554,12 @@
 			&__program {
 				&-body {
 					align-items: flex-end;
+					position: relative;
+				}
+				&-btn {
+					position: absolute;
+					top: 34px;
+					right: 0;
 				}
 			}
 			&__corporate {

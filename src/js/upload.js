@@ -25,19 +25,36 @@ $(document).ready(function () {
             label.html(labelVal);
     });
 
-    // Обработчик клика для кнопки добавления нового блока 'upload-file'
-    $('.upload__btn').on('click', function () {
-        var uploadContainer = $(this).closest('.upload');
-        var uploadBody = uploadContainer.find('.upload__body');
-        var uploadFileBlock = uploadBody.find('.upload-file').first();
-        var clone = uploadFileBlock.clone(true);
+	// Обработчик клика для кнопки добавления нового блока 'upload-file'
+	$(document).on('click', '.upload__btn', function () {
+		var briefFormLocation = $(this).closest('.brief-form__location');
+		if (briefFormLocation.length === 0) {;
+			return;
+		}
+		var briefFormBody = briefFormLocation.find('.brief-form-location__body');
+		if (briefFormBody.length === 0) {
+			return;
+		}
+		var briefFormWrap = briefFormBody.find('.brief-form-location__wrap').first();
+		if (briefFormWrap.length === 0) {
+			return;
+		}
+		var clone = briefFormWrap.clone(true);
+		clone.find('input[type="text"]').val('');
+		clone.find('input[type="file"]').val('');
+		clone.find('.upload__caption').html('Загрузите изображение <span>(JPG, JPEG, PNG. Размер до 2 Мб)</span>');
+		var newId = 'file-' + ($('.upload-file').length + 1);
+		clone.find('input[type="file"]').attr('id', newId);
+		clone.find('.upload__box').attr('for', newId);
+		if (clone.find('.upload__deleate').length === 0) {
+			clone.append('<button class="upload__deleate">-</button>');
+		}
+		briefFormBody.append(clone);
+	});
 
-        clone.find('input[type="file"]').val('');
-        clone.find('.upload__caption').html('Загрузите изображение <span>(JPG, JPEG, PNG. Размер до 2 Мб)</span>');
-        uploadBody.append(clone);
+	// Обработчик клика для кнопки удаления блока 'upload__deleate'
+	$(document).on('click', '.upload__deleate', function () {
+		$(this).closest('.brief-form-location__wrap').remove();
+	});
 
-        var newId = 'file-' + ($('.upload-file').length);
-        clone.find('input[type="file"]').attr('id', newId);
-        clone.find('label').attr('for', newId);
-    });
 });
