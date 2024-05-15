@@ -201,7 +201,8 @@
 						width: 40px;
 						height: 40px;
 					}
-					&__caption {
+					&__caption,
+					&__info {
 						display: flex;
 						flex-direction: column;
 						gap: 3px;
@@ -286,6 +287,41 @@
 		}
 		&__btn {
 			width: 300px;
+		}
+		&-checkbox {
+			display: block;
+			cursor: pointer;
+			input {
+				display: none;
+			}
+			&__caption {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 1px solid var(--fill-gray-stroke-light);
+				background-color: var(--fill-white);
+				border-radius: 20px;
+				padding: 10px 12px;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 100%;
+				color: var(--fill-blue);
+				transition:
+					color 0.3s,
+					background 0.3s,
+					border 0.3s;
+				&:hover {
+					border-color: var(--fill-blue);
+					background-color: var(--fill-blue);
+					color: var(--fill-white);
+				}
+			}
+			input[type="checkbox"]:checked + .brief-form-checkbox__caption,
+			input[type="radio"]:checked + .brief-form-checkbox__caption {
+				border-color: var(--fill-blue);
+				background-color: var(--fill-blue);
+				color: var(--fill-white);
+			}
 		}
 		textarea {
 			height: 500px;
@@ -568,6 +604,15 @@
 				gap: 8px;
 				&-flex {
 					gap: 10px;
+				}
+			}
+			&-checkbox {
+				&__caption {
+					&:hover {
+						border-color: var(--fill-gray-stroke-light);
+						background-color: var(--fill-white);
+						color: var(--fill-blue);
+					}
 				}
 			}
 			&__buttons {

@@ -40,7 +40,8 @@
 			}
 		}
 	}
-	&__caption {
+	&__caption,
+	&__info {
 		font-size: 14px;
 		line-height: 100%;
 		color: var(--text-black);
@@ -68,7 +69,8 @@
 		&__body {
 			min-width: calc(100% - 60px);
 		}
-		&__caption {
+		&__caption,
+		&__info {
 			span {
 				display: none;
 			}

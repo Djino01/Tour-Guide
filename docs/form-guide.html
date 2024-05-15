@@ -174,7 +174,7 @@
 							<div class="upload">
 								<div class="upload__body">
 									<div class="upload-file">
-										<input type="file" multiple name="file[]" id="file-1" required
+										<input type="file" multiple name="location-file-1[]" id="file-1" required
 											class="inputfile">
 										<label for="file-1" class="upload__box">
 											<span class="upload__icon">
@@ -476,30 +476,38 @@
 			<div class="brief-form__tags section-small">
 				<div class="form__caption">Выберите теги</div>
 				<div class="brief-form__tags-wrap">
-					<a href="#" class="brief-form__tag tag">Обзорная</a>
-					<a href="#" class="brief-form__tag tag">По Красноярску</a>
-					<a href="#" class="brief-form__tag tag">На Красноярскую ГЭС</a>
-					<a href="#" class="brief-form__tag tag">На Столбы</a>
-					<a href="#" class="brief-form__tag tag">На Цырь-рыбу</a>
-					<a href="#" class="brief-form__tag tag">На смотровые</a>
-					<a href="#" class="brief-form__tag tag">Локальная</a>
-					<a href="#" class="brief-form__tag tag">В Дивногорск</a>
-					<button class="brief-form__tags-btn">
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0_2269_8328)">
-								<path d="M12 5V19" stroke="white" stroke-width="1.25" stroke-linecap="round"
-									stroke-linejoin="round" />
-								<path d="M5 12H19" stroke="white" stroke-width="1.25" stroke-linecap="round"
-									stroke-linejoin="round" />
-							</g>
-							<defs>
-								<clipPath id="clip0_2269_8328">
-									<rect width="24" height="24" fill="white" />
-								</clipPath>
-							</defs>
-						</svg>
-						<span>Добавить свой тег</span>
-					</button>
+					<label class="brief-form-checkbox">
+						<input type="checkbox" name="tag" value="active">
+						<div class="brief-form-checkbox__caption">Обзорная</div>
+					</label>
+					<label class="brief-form-checkbox">
+						<input type="checkbox" name="tag" value="active">
+						<div class="brief-form-checkbox__caption">По Красноярску</div>
+					</label>
+					<label class="brief-form-checkbox">
+						<input type="checkbox" name="tag" value="active">
+						<div class="brief-form-checkbox__caption">На Красноярскую ГЭС</div>
+					</label>
+					<label class="brief-form-checkbox">
+						<input type="checkbox" name="tag" value="active">
+						<div class="brief-form-checkbox__caption">На Столбы</div>
+					</label>
+					<label class="brief-form-checkbox">
+						<input type="checkbox" name="tag" value="active">
+						<div class="brief-form-checkbox__caption">На Цырь-рыбу</div>
+					</label>
+					<label class="brief-form-checkbox">
+						<input type="checkbox" name="tag" value="active">
+						<div class="brief-form-checkbox__caption">На смотровые</div>
+					</label>
+					<label class="brief-form-checkbox">
+						<input type="checkbox" name="tag" value="active">
+						<div class="brief-form-checkbox__caption">Локальная</div>
+					</label>
+					<label class="brief-form-checkbox">
+						<input type="checkbox" name="tag" value="active">
+						<div class="brief-form-checkbox__caption">В Дивногорск</div>
+					</label>
 				</div>
 			</div>
 			<div class="brief-form__media section-small">
